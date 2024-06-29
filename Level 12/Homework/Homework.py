@@ -19,15 +19,18 @@ elif Guess == 6:
     print("You are incorrect!")
 
 #Task 2
-num = 0
+sum = 0
 for i in range(1, 100):
-    print(num + i)
+    sum = sum + 1
+    
+    print(sum)
 
 #Task 3
 total_sum = 0
 
-for i in range(1, 1001):
-    if i <= 500 or i >= 600:
+for i in range(1000):
+    if i not in range(500, 600):
+
         total_sum += i
 
 print(total_sum)
@@ -44,9 +47,14 @@ while True:
 
 
 #Task 5
-num = 1
-for i in range(1, 10):
-    print(num * i)
+i = 1
+mult1 = 1
+
+while i < 10:
+    mult1 = mult1 * i
+    i = i + 1
+
+    print(mult1)
 
 #Task 6
 num = int(input("Enter number here: "))
